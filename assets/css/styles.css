@@ -1308,28 +1308,26 @@ transform: translateX(0);
     transform: translateX(0);
   }
   
-.cacasel{
-  margin-top: 10px;
-  width: 100%;
-  padding: 20px;
-  background-color: transparent;
-  height: 100vh;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
--webkit-justify-content: center;
-  align-items: center;
--webkit-align-items: center;
+  .cacasel {
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    height: 66vh;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
 }
-}
+ }
 
  .meme
   .home__container, .home__img {
     height: 640px;
   }
-}
 
 .sec{
   background-repeat: no-repeat;
