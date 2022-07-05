@@ -1728,3 +1728,17 @@ We give it an opacity leaner to .25s, that way when we hover we will get a nice 
 .swap-on-hover:hover > .swap-on-hover__front-image{
   opacity: 0;
 }
+
+
+@media screen and (max-width: 701px) {
+.swap-on-hover {
+  height: 254.6781311035156px;
+  width: 100%;
+  top: 0px;
+  border-radius: 0px;
+  background-color: gray;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+}
