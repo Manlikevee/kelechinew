@@ -1651,7 +1651,7 @@ text-align: left;
 .tab-slider--tabs:after {
   content: "";
   width: 50%;
-  background: #345F90;
+  background: var(--first-color);
   height: 100%;
   position: absolute;
   top: 0;
