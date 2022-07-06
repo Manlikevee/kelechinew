@@ -1379,11 +1379,31 @@ padding: 20px;
 }
 
 .meme{
- padding-top: 90px;
+ padding-top: 5px;
   width: 90%;
   display: flex;
   gap: 60px;
   height: 100%;
+}
+
+.ddd{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px !important;
+}
+
+.ddd1{
+  display: flex;
+  flex-direction: column;
+}
+
+.ddd2{
+  margin-top: auto;
+}
+.ddd2 ul{
+  display: flex;
+  gap: 10px;
+
 }
 .contenttext{
   margin-top: 30px;
@@ -1445,7 +1465,7 @@ margin: auto;
 }
 
 .aboutsector{
-margin-top: 50px;
+margin-top: 10px;
 width: 97%;
 
 }
@@ -1453,13 +1473,14 @@ width: 97%;
 .imagesideofdiv{
 width: 50%;
 height: 100%;
-margin-top: 160px;
+margin-top: 56px;
 }
 
 .imagesideofdiv .kcimg{
 width: 100%;
 height: 100%;
 }
+
 
 
 .imagesideofdiv .kcimg img{
@@ -1740,5 +1761,10 @@ We give it an opacity leaner to .25s, that way when we hover we will get a nice 
   position: relative;
   margin: 0 auto;
   max-width: 100%;
+}
+.ddd {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px !important;
 }
 }
