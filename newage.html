@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive grid</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat");
+body,
+html {
+  background-color: #fafafa;
+  font-size: 14px;
+  font-family: "Montserrat", monospace;
+}
+
+.section {
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 4rem;
+  }
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 1.5em;
+  font-weight: normal;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  grid-row-gap: 25px;
+  grid-auto-rows: 350px;
+  grid-auto-flow: row dense;
+}
+
+.card {
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #c4c4c4;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url("https://picsum.photos/1000/?image=1028");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition-delay: 0.1s;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 2px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;
+  transform: translate(0, -0.4rem);
+}
+.card:hover:after {
+  opacity: 0;
+}
+.card__details {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  background: #fff;
+  color: #393939;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+  </style>
+<!-- partial:index.partial.html -->
+<section class="section">
+  <h1>Responsive grid + cards hover effect</h1>
+  <div class="grid">
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1657037029325-be5c4f1d4dfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1657037029325-be5c4f1d4dfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1500514966906-fe245eea9344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet Lorem ipsum dolor, sit amet consectetu
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1512704450716-cfed18799503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1657037029325-be5c4f1d4dfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1656119651659-2362e29f93fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1576006144029-e42bb7166c76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1629155394363-cf9cafce6948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=581&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1657053077578-ee3c3dbf18a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1657088746570-0218626e8f55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+    <div class="card" style="  border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #c4c4c4;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url(https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    transition-delay: 0.1s;">
+      <div class="card__details">
+        Jobs To Be Done Workseet
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
