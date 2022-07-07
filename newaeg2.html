@@ -936,27 +936,23 @@ $(document).ready(function() {
 
 
 <script>
-          function copyToClipboard() {
-            // Create a "hidden" input
-            var aux = document.createElement("input");
-            // Assign it the value of the specified element
-            aux.setAttribute("value", "You can no longer print.This is part of the new system security measure.");
-            // Append it to the body
-            document.body.appendChild(aux);
-            // Highlight its content
-            aux.select();
-            // Copy the highlighted text
-            document.execCommand("copy");
-            // Remove it from the body
-            document.body.removeChild(aux);
-            alert("Print screen diable.");
-        }
-    
-        $(window).keyup(function (e) {
-            if (e.keyCode == 44) {
-                copyToClipboard();
-            }
-        }); 
+function copyToClipboard() {
+
+var aux = document.createElement("input");
+aux.setAttribute("value", "print screen disabled!");      
+document.body.appendChild(aux);
+aux.select();
+document.execCommand("copy");
+// Remove it from the body
+document.body.removeChild(aux);
+alert("Print screen disabled!");
+}
+
+$(window).keyup(function(e){
+if(e.keyCode == 44){
+  copyToClipboard();
+}
+});
 </script>
 
 
