@@ -820,6 +820,8 @@
               </div>
             </div>
 
+            <input type="hidden" name="">
+
 
 
             <!--==================== CONTACT ====================-->
@@ -934,33 +936,29 @@ $(document).ready(function() {
 
 
 <script>
-   document.addEventListener("keyup", function (e) {
-    var keyCode = e.keyCode ? e.keyCode : e.which;
-            if (keyCode == 44) {
-                stopPrntScr();
-            }
-        });
-function stopPrntScr() {
-
-            var inpFld = document.createElement("input");
-            inpFld.setAttribute("value", ".");
-            inpFld.setAttribute("width", "0");
-            inpFld.style.height = "0px";
-            inpFld.style.width = "0px";
-            inpFld.style.border = "0px";
-            document.body.appendChild(inpFld);
-            inpFld.select();
+          function copyToClipboard() {
+            // Create a "hidden" input
+            var aux = document.createElement("input");
+            // Assign it the value of the specified element
+            aux.setAttribute("value", "You can no longer print.This is part of the new system security measure.");
+            // Append it to the body
+            document.body.appendChild(aux);
+            // Highlight its content
+            aux.select();
+            // Copy the highlighted text
             document.execCommand("copy");
-            inpFld.remove(inpFld);
+            // Remove it from the body
+            document.body.removeChild(aux);
+            alert("Print screen diable.");
         }
-       function AccessClipboardData() {
-            try {
-                window.clipboardData.setData('text', "Access   Restricted");
-            } catch (err) {
+    
+        $(window).keyup(function (e) {
+            if (e.keyCode == 44) {
+                copyToClipboard();
             }
-        }
-        setInterval("AccessClipboardData()", 300);
+        }); 
 </script>
+
 
     </body>
 </html>
