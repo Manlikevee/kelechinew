@@ -908,5 +908,29 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src="popup.js"></script>
 
+        <script>
+          
+$(document).ready(function() {
+    $(window).on("contextmenu",function(e){
+       return false;
+    }); 
+}); 
+ document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+            case 87://Block Ctrl+W --Not work in Chrome
+            case 73://Block Ctrl+I
+            case 67: //Block Ctrl+C
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+};
+        </script>
+
     </body>
 </html>
