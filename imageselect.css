@@ -247,4 +247,8 @@ flex-direction: column;
   gap: 3px;
   padding: 3px;
 }
+
+.sidefortxt{
+  font-size: 13.5px;
+}
 }
