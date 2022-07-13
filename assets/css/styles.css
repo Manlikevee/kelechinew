@@ -17,6 +17,7 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
+  --linkcolor: #444;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -118,6 +119,7 @@ body.dark-theme{
   --text-color: hsl(var(--hue), 4%, 75%);
   --body-color: hsl(var(--hue), 8%, 12%);
   --container-color: hsl(var(--hue), 8%, 16%);
+  --linkcolor: #fff;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -1402,8 +1404,24 @@ padding: 20px;
 }
 .ddd2 ul{
   display: flex;
-  gap: 10px;
+  gap: 15px;
 
+}
+.ddd a{
+  text-decoration: none;
+  color: var(--linkcolor);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+
+.linkactive{
+  font-weight: 700;
+  background-color: var(--first-color-alt);
+  border-radius: 10px;
+  padding: 5px;
+  color: white !important ;
 }
 .contenttext{
   margin-top: 30px;
@@ -1763,8 +1781,17 @@ We give it an opacity leaner to .25s, that way when we hover we will get a nice 
   max-width: 100%;
 }
 .ddd {
+  flex-direction: column-reverse;
   display: flex;
   justify-content: space-between;
   margin-top: 34px !important;
+  gap: 20px;
+}
+.ddd2{
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 }
