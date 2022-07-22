@@ -1446,12 +1446,28 @@ text-align: left;
 
 }
 
+.bususu{
+  text-align: center; font-size: 14px; min-height: 50vh; display: flex; align-items: center; justify-content: center;
+}
+
 @media screen and (max-width: 901px) {
+
+  .cacasel{
+    height: 60vh;
+  }
+
+  .bususu{
+    min-height: auto;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    align-items: flex-start;
+  }
 
   .meme{
     flex-direction: column-reverse;
     gap: 19px;
   }
+
   .sec {
     height: 230px;
   }
