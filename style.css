@@ -376,6 +376,7 @@ img {
   wall3 painting {
     width: 120rem;
     height: 156rem;
+    object-fit: cover;
     border: 2rem solid #d9996b;
     border-top-color: #221309;
     border-left-color: #361f0e;
@@ -501,6 +502,7 @@ img {
     border-radius: 1rem;
     box-shadow: 0.5rem 1rem 2rem rgba(17, 14, 18, 0.5), inset -0.25rem -0.25rem 1rem rgba(17, 14, 18, 0.25), inset 0.25rem 0.25rem 1rem #fff;
   }
+  
   wall4 label:after {
     width: 1rem;
     height: 3rem;
@@ -510,6 +512,7 @@ img {
     border-radius: 0.15rem;
     background: linear-gradient(rgba(255, 255, 255, 0), #fff);
   }
+
   wall4 label:before {
     width: 0.5rem;
     height: 0.5rem;
