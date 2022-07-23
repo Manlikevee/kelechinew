@@ -1448,6 +1448,8 @@ text-align: left;
 
 }
 
+
+
 .bususu{
   text-align: center; font-size: 15px; line-height: 30px; min-height: 50vh; display: flex; flex-direction: column;
    align-items: center; justify-content: center;
@@ -1456,6 +1458,35 @@ text-align: left;
 .oranges{
   width: 100%;
   text-align: center;
+}
+.nine h1 {
+  text-align:center; font-size:50px; text-transform:uppercase;  letter-spacing:1px;
+  font-family:"Playfair Display", serif; font-weight:400;
+}
+.nine h1 span {
+  margin-top: 5px;
+    font-size:15px;  word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.nine h1 span:after,.nine h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+
+
+.ha1{
+
 }
 
 @media screen and (max-width: 901px) {
