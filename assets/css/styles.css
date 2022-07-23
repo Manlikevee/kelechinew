@@ -970,13 +970,15 @@ the website, in dark theme
   }
 
   .home{
-    padding: 13rem 0 5rem;
+    padding: 12rem 0 5rem;
   }
   .home__img{
     width: 350px;
   }
   .home__description{
-    padding-right: 7rem;
+    padding-right: 2rem;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .about__img{
@@ -1447,13 +1449,22 @@ text-align: left;
 }
 
 .bususu{
-  text-align: center; font-size: 14px; min-height: 50vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; font-size: 15px; line-height: 30px; min-height: 50vh; display: flex; flex-direction: column;
+   align-items: center; justify-content: center;
 }
 
+.oranges{
+  width: 100%;
+  text-align: center;
+}
 @media screen and (max-width: 901px) {
 
   .cacasel{
     height: 60vh;
+  }
+
+  .home__description{
+    line-height: 30px;
   }
 
   .bususu{
