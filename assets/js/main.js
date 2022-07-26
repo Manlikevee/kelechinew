@@ -176,3 +176,5 @@ function finalVideo(){
 }
 // ended, when the video ends
 videoFile.addEventListener('ended', finalVideo)
+
+
