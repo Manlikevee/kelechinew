@@ -507,7 +507,10 @@ the website, in dark theme
 .product__img{
   position: relative;
   width: 120px;
+  height: 220px;
+  object-fit: cover;
   justify-self: center;
+  border-radius: 10%;
   margin-bottom: var(--mb-0-75);
   transition: .3s;
 }
