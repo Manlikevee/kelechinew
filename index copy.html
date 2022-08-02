@@ -26,19 +26,20 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="index.html" class="nav__link active-link">Home</a>
+                            <a href="index.html" class="nav__link" id="myhome">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                            <a href="index copy.html" class="nav__link" id="myabout">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#products" class="nav__link">Products</a>
+                            <a href="events copy.html" class="nav__link" id="myserices">Series</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#faqs" class="nav__link">FAQs</a>
+                            <a href="imagegallery.html" class="nav__link" id="mygallery">Gallery</a>
                         </li>
+                        
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact Us</a>
+                            <a href="events.html" class="nav__link" id="myevents">Exibition</a>
                         </li>
                     </ul>
 
@@ -217,5 +218,10 @@
         <script src="assets/js/main.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src="carosel.js"></script>
+
+        <script>
+            document.getElementById("myabout").classList.add("active-link");
+        </script>
+
     </body>
 </html>

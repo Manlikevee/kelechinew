@@ -2016,3 +2016,19 @@ video {
   text-decoration: none;
   cursor: pointer;
 }
+
+.exibitionreportimage{
+  height: 400px;
+  width: 100%;
+}
+.exibitionreportimage img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.exibitionreporttext{
+  margin-top: 30px;
+  text-align: start;
+  line-height: 33px;
+}

@@ -430,10 +430,13 @@ img {
     content: normal;
   }
   
+  
+
   wall2 painting {
-    width: 200rem;
-    height: 126rem;
-    transform: translate3d(-100rem, 0, 148rem) scaleX(-1);
+    width: 125rem;
+    height: 146rem;
+    object-fit: cover;
+    transform: translate3d(-50rem, 0, 128rem) scaleX(-1);
   }
   
   wall3 painting {
